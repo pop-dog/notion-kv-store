@@ -1,0 +1,29 @@
+{
+  "name": "notion-kv-store",
+  "version": "1.0.0",
+  "description": "A simple key-value store using Notion API",
+  "main": "index.js",
+  "scripts": {
+    "test": "env-cmd mocha"
+  },
+  "keywords": [
+    "key-value-store",
+    "key-value",
+    "key",
+    "value"
+  ],
+  "author": "Popdog",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "env-cmd": "^10.1.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3"
+  },
+  "type": "module",
+  "mocha": {
+    "env": "dotenv_config_path=../.env"
+  }
+}
